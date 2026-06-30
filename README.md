@@ -12,20 +12,18 @@ A mobile-first, installable gym tracker with a gritty training-floor UI.
 - Workout history, weekly totals and training streaks
 - Kilograms or pounds
 - JSON backup and restore
+- Offline use after the first visit
 
-All personal data stays in the browser's local storage. No account or backend is required.
+All personal data stays privately in the browser's local storage. No account, database, npm install or backend is required.
 
-## Run locally
+## Run it
 
-```bash
-npm install
-npm run dev
-```
+Open `index.html` directly, or serve the repository with any static web server.
 
-## Production build
+## Publish with GitHub Pages
 
-```bash
-npm run build
-```
+In the repository, open **Settings → Pages**. Under **Build and deployment**, select **Deploy from a branch**, choose **main** and **/(root)**, then save.
 
-The site is configured for GitHub Pages with a relative Vite base path and includes a GitHub Actions deployment workflow.
+The published address will be:
+
+`https://beckburgz1311-ux.github.io/Gym-Buddy/`
