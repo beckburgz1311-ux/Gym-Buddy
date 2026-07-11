@@ -1,29 +1,47 @@
-# Gym Buddy
+# CodeTrail
 
-A mobile-first, installable gym tracker with a gritty training-floor UI.
+A mobile-first, installable coding-learning app inspired by the clarity and momentum of language-learning apps, with original branding and interface design.
 
-## What it tracks
+## Current course
 
-- Push, pull, legs, full-body and custom workout routines
-- Exercises, sets, reps and working weight
-- Completed-set volume and estimated one-rep-max personal bests
-- Active workout duration and session notes
-- Body weight, start weight, target weight and weight-loss progress
-- Workout history, weekly totals and training streaks
-- Kilograms or pounds
-- JSON backup and restore
-- Offline use after the first visit
+The first playable course teaches beginner Python through nine bite-sized lessons:
 
-All personal data stays privately in the browser's local storage. No account, database, npm install or backend is required.
+- Printing and basic syntax
+- Variables
+- Numbers and strings
+- Boolean comparisons
+- If statements
+- Logical operators
+- Loops
+- Functions
+- A final mixed challenge
 
-## Run it
+## Features
 
-Open `index.html` directly, or serve the repository with any static web server.
+- A visual learning path with locked, current and completed lessons
+- Multiple-choice, fill-the-blank and code-writing challenges
+- Instant explanations after every answer
+- XP, hearts, daily goals and learning streaks
+- Practice mode that restores hearts
+- Achievements and a progress profile
+- Local browser saves with no account or database
+- Installable PWA with offline support
+- Responsive mobile and desktop design
 
-## Publish with GitHub Pages
+## Run locally
 
-In the repository, open **Settings → Pages**. Under **Build and deployment**, select **Deploy from a branch**, choose **main** and **/(root)**, then save.
+Open `index.html` directly, or serve the repository with a static web server:
 
-The published address will be:
+```bash
+python3 -m http.server 8080
+```
 
-`https://beckburgz1311-ux.github.io/Gym-Buddy/`
+Then open `http://localhost:8080`.
+
+## GitHub Pages
+
+When GitHub Pages is enabled for the branch/root being deployed, the app can run as a static site with no build step.
+
+## Technical notes
+
+The app is dependency-free and contained in `index.html`, with `manifest.webmanifest`, `icon.svg` and `sw.js` providing installability and offline support. User progress is stored in `localStorage` under `codetrail-progress-v1`.
